@@ -1,19 +1,19 @@
 package github_workshop;
 public class Contains
 {
-    public static int main(String[] args) {
-        int[] num = (1,2,3,4,5);
+    public static void main(String[] args) {
+        int[] num = {1,2,3,4,5};
         int toFind = 3;
-        boolean fount = true;
+        boolean found = true;
 
-        for (n:num) {
-            if (n= toFind) {
+        for (int n:num) {
+            if (n == toFind) {
                 found = true;
-                break
+                break;
             }
         }
 
-        if (found) print (toFind + "is Found.");
-        else print (toFind + "is not found.");
+        if (found) System.out.println(toFind + "is Found.");
+        else System.out.println(toFind + "is not found.");
     }
 }
